@@ -380,6 +380,7 @@ void play(char field[][FieldX]) {
             }
             makeAMove(field,y,x,direction,moves);
             checkFieldForDrops(field, currentTopRow);
+            findFullRows(field, currentTopRow);
             break;
         default: std::cout << "ERROR";break;
         }
